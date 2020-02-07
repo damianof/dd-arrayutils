@@ -1,7 +1,7 @@
 {
 	"compilerOptions": {
-		"target": "es5", // 'es3', 'es5', 'es6', 'es2015', 'es2016', 'es2017', 'es2018', 'es2019', 'es2020', 'esnext'
-		"module": "es2015", //'none', 'commonjs', 'amd', 'system', 'umd', 'es6', 'es2015', 'esnext'
+		"target": "es2015", // 'es3', 'es5', 'es6', 'es2015', 'es2016', 'es2017', 'es2018', 'es2019', 'es2020', 'esnext'
+		"module": "commonjs", //'none', 'commonjs', 'amd', 'system', 'umd', 'es6', 'es2015', 'esnext'
 		"declaration": true,
 		"outDir": "lib",
 		"strict": true,

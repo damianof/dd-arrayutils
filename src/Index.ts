@@ -1,6 +1,2 @@
-import { arrayUtils, ArrayUtils } from './arrays/ArrayUtils'
-
-export default {
-	arrayUtils,
-	ArrayUtils
-}
+import { arrayUtils } from './arrays/ArrayUtils'
+export = arrayUtils
