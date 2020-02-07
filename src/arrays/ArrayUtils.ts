@@ -26,11 +26,18 @@ export class ArrayUtils implements IArrayUtils {
 	}
 
 	chunk<T>(values: T[], chunkSize: number): T[][] {
+		// NOTE; funciton will return an empty array if values parameter is undefined
 		const result: T[][] = []
-		if ((values || []).length > 0) {
+		if ((values || []).length > chunkSize) {
+			// if values.length > chunkSize, proceed to chunk it
 			for (let i = 0, len = values.length; i<len; i += chunkSize) {
-				result.push(values.slice(i, i + chunkSize))
+				result.push(<T[]>values.slice(i, i + chunkSize))
 			}
+			return result
+		} else if ((values || []).length > 0) {
+			// if values.length is less than chunkSize but greater than 0, add it to result
+			result.push(values)
+			return result
 		}
 		return result
 	}
