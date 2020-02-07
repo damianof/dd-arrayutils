@@ -1,6 +1,6 @@
 import { expect } from 'chai'
-import { arrayUtils } from '@/arrays/ArrayUtils'
-import { TestItem, testItemHelper } from '@tests/TestItemHelper'
+import { arrayUtils } from '@/arrays/array-utils'
+import { TestItem, testItemHelper } from '@tests/test-item-helper'
 
 describe('ArrayUtils', () => {
 
