@@ -1,0 +1,36 @@
+{
+	"compilerOptions": {
+		"target": "esnext",
+		"module": "commonjs",
+        "outDir": "dist",
+		"strict": true,
+		"importHelpers": true,
+		"moduleResolution": "node",
+		"experimentalDecorators": true,
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"sourceMap": false,
+		"baseUrl": ".",
+		"types": [
+			"mocha",
+			"chai"
+		],
+		"paths": {
+			"@/*": [
+				"src/*"
+			]
+		},
+		"lib": [
+			"esnext",
+			"dom",
+			"dom.iterable",
+			"scripthost"
+		]
+	},
+	"include": [
+		"src/**/*.ts"
+	],
+	"exclude": [
+		"node_modules"
+	]
+}
