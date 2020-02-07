@@ -1,2 +1,2 @@
-import { arrayUtils } from './arrays/array-utils';
+import { arrayUtils } from './arrays/ArrayUtils';
 export = arrayUtils;
