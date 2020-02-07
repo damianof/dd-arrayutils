@@ -1,12 +1,15 @@
-export class ArrayUtils {
-    getProperty(obj, key) {
-        return obj[key];
+var ArrayUtils = /** @class */ (function () {
+    function ArrayUtils() {
     }
-    orderBy(values, orderType) {
+    ArrayUtils.prototype.getProperty = function (obj, key) {
+        return obj[key];
+    };
+    ArrayUtils.prototype.orderBy = function (values, orderType) {
+        var _this = this;
         if ((values || []).length > 1) {
-            (values || []).sort((a, b) => {
-                const valueA = this.getProperty(a, orderType);
-                const valueB = this.getProperty(b, orderType);
+            (values || []).sort(function (a, b) {
+                var valueA = _this.getProperty(a, orderType);
+                var valueB = _this.getProperty(b, orderType);
                 if (valueA < valueB) {
                     return -1;
                 }
@@ -18,15 +21,17 @@ export class ArrayUtils {
                 }
             });
         }
-    }
-    chunk(values, chunkSize) {
-        const result = [];
+    };
+    ArrayUtils.prototype.chunk = function (values, chunkSize) {
+        var result = [];
         if ((values || []).length > 0) {
-            for (let i = 0, len = values.length; i < len; i += chunkSize) {
+            for (var i = 0, len = values.length; i < len; i += chunkSize) {
                 result.push(values.slice(i, i + chunkSize));
             }
         }
         return result;
-    }
-}
-export const arrayUtils = new ArrayUtils();
+    };
+    return ArrayUtils;
+}());
+export { ArrayUtils };
+export var arrayUtils = new ArrayUtils();
