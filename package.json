@@ -1,21 +1,12 @@
 {
-	"name": "dd-events",
+	"name": "dd-arrayutils",
 	"version": "0.9.1",
 	"description": "Array custom extensions",
-	"author": "Damiano Fusco",
 	"main": "./dist/index.js",
-	"license": "MIT",
 	"scripts": {
 		"test": "karma start",
 		"build": "tsc"
 	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/damianof/dd-arrayutils.git"
-	},
-	"keywords": [
-		"dd-arrayutils"
-	],
 	"dependencies": {},
 	"devDependencies": {
 		"@types/chai": "^4.2.8",
@@ -30,5 +21,22 @@
 		"karma-typescript": "^4.1.1",
 		"mocha": "^7.0.1",
 		"typescript": "^3.7.5"
-	}
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/damianof/dd-arrayutils.git"
+	},
+	"keywords": [
+		"array",
+		"arrays",
+		"utils",
+		"chunk",
+		"sort"
+	],
+	"author": "Damiano Fusco",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/damianof/dd-arrayutils/issues"
+	},
+	"homepage": "https://github.com/damianof/dd-arrayutils#readme"
 }
