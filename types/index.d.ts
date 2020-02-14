@@ -8,3 +8,4 @@ export declare class ArrayUtils implements IArrayUtils {
 	chunk<T>(values: T[], chunkSize: number): T[][];
 }
 export declare const arrayUtils: ArrayUtils;
+

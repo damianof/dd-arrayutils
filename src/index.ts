@@ -1,2 +1,6 @@
 import { ArrayUtils } from './arrays/ArrayUtils'
-export = new ArrayUtils()
+
+export = {
+	arrayUtils: new ArrayUtils(),
+	ArrayUtils: ArrayUtils
+}
