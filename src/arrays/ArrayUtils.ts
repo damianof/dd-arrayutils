@@ -43,5 +43,3 @@ export class ArrayUtils implements IArrayUtils {
 	}
 
 }
-
-export const arrayUtils = new ArrayUtils()

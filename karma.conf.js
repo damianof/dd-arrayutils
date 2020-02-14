@@ -14,20 +14,23 @@ module.exports = function(config) {
         },
 
 		karmaTypescriptConfig: {
-			"compilerOptions": {
-				"target": "es2015",
-				"module": "commonjs",
-				"esModuleInterop": true,
-				"noImplicitAny": true,
-				"outDir": "dist",
-				"sourceMap": true,
-				"types" : [
+			coverageOptions: {
+        		instrumentation: false,
+			},
+			compilerOptions: {
+				target: "es2015",
+				module: "commonjs",
+				esModuleInterop: true,
+				noImplicitAny: true,
+				outDir: "dist",
+				sourceMap: true,
+				types : [
 					"mocha",
 					"chai",
 					"node"
 				],
-				"baseUrl": ".",
-				"paths": {
+				baseUrl: ".",
+				paths: {
 					"@tests/*": [
 						"tests-helpers/*",
 						"tests/*"
