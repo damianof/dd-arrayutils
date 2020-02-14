@@ -41,5 +41,4 @@ export class ArrayUtils implements IArrayUtils {
 		}
 		return result
 	}
-
 }

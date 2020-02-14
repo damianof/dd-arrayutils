@@ -1,6 +1,6 @@
 {
 	"name": "dd-arrayutils",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"description": "Array custom extensions",
 	"main": "lib/index.js",
 	"types": "types/index.d.ts",
