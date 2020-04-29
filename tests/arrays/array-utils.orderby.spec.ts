@@ -1,8 +1,10 @@
 import { expect } from 'chai'
-import arrayUtils from '@/index'
+import { ArrayUtils } from '@/arrays/ArrayUtils'
 import { TestItem, testItemHelper } from '@tests/test-item-helper'
 
 describe('ArrayUtils', () => {
+
+	const arrayUtils = new ArrayUtils()
 
 	describe('orderBy', () => {
 
