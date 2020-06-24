@@ -1,6 +1,6 @@
 {
-	"name": "dd-arrayutils",
-	"version": "1.0.4",
+	"name": "@damianof/dd-arrayutils",
+	"version": "1.0.5",
 	"description": "Array custom extensions",
 	"main": "lib/index.js",
 	"types": "types/index.d.ts",
@@ -39,5 +39,8 @@
 	"bugs": {
 		"url": "https://github.com/damianof/dd-arrayutils/issues"
 	},
-	"homepage": "https://github.com/damianof/dd-arrayutils#readme"
+	"homepage": "https://github.com/damianof/dd-arrayutils#readme",
+	"publishConfig": {
+	  "registry": "https://npm.pkg.github.com/"
+	}
 }
