@@ -2,10 +2,9 @@
 	"compilerOptions": {
 		"target": "es2015", //"es2015", // 'es3', 'es5', 'es6', 'es2015', 'es2016', 'es2017', 'es2018', 'es2019', 'es2020', 'esnext'
 		"module": "commonjs", //"commonjs", //'none', 'commonjs', 'amd', 'system', 'umd', 'es6', 'es2015', 'esnext',
-		"declaration": true,
-		"preserveSymlinks": false,
-		"stripInternal": true,
-		"skipLibCheck": true,
+		// "declaration": true,
+		// "preserveSymlinks": false,
+		// "stripInternal": true,
 		"outDir": "lib",
 		"strict": true,
 		"importHelpers": true,
@@ -32,10 +31,10 @@
 		]
 	},
 	"include": [
-		"src/**/*.ts"
+		"src/**/*.ts",
+		"tests/**/*.ts"
 	],
 	"exclude": [
-		"node_modules",
-		"tests/**/*.ts"
+		"node_modules"
 	]
 }
