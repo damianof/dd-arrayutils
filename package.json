@@ -1,43 +1,45 @@
 {
-	"name": "dd-arrayutils",
-	"version": "1.0.6",
-	"description": "Array custom extensions",
-	"main": "lib/index.js",
-	"types": "lib/index.d.ts",
-	"scripts": {
-		"test": "TS_NODE_PROJECT='./tsconfig.tests.json' mocha -r ts-node/register tests/**/*.spec.ts",
-		"build-tests": "TS_NODE_PROJECT='./tsconfig.tests.json' tsc",
-		"build": "tsc"
-	},
-	"dependencies": {
-		"tslib": "^2.0.0"
-	},
-	"devDependencies": {
-		"@types/chai": "^4.2.12",
-		"@types/mocha": "^8.0.0",
-		"chai": "^4.2.0",
-		"mocha": "^8.0.1",
-		"ts-node": "^8.10.2",
-		"typescript": "^3.9.7"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/damianof/dd-arrayutils.git"
-	},
-	"keywords": [
-		"array",
-		"arrays",
-		"utils",
-		"chunk",
-		"sort"
-	],
-	"author": "Damiano Fusco",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/damianof/dd-arrayutils/issues"
-	},
-	"homepage": "https://github.com/damianof/dd-arrayutils#readme",
-	"publishConfig": {
-		"registry": "https://registry.npmjs.org/"
-	}
+  "name": "dd-arrayutils",
+  "version": "1.0.7",
+  "description": "Array custom extensions",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "test": "TS_NODE_PROJECT='./tsconfig.tests.json' mocha -r ts-node/register tests/**/*.spec.ts",
+    "build-tests": "TS_NODE_PROJECT='./tsconfig.tests.json' tsc",
+    "build": "tsc",
+    "pretty": "prettier --write '**/*.{ts,js,json}'"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.12",
+    "@types/mocha": "^8.0.0",
+    "chai": "^4.2.0",
+    "mocha": "^8.0.1",
+    "sa-unique-id": "^0.9.1",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/damianof/dd-arrayutils.git"
+  },
+  "keywords": [
+    "array",
+    "arrays",
+    "utils",
+    "chunk",
+    "sort"
+  ],
+  "author": "Damiano Fusco",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/damianof/dd-arrayutils/issues"
+  },
+  "homepage": "https://github.com/damianof/dd-arrayutils#readme",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  }
 }
