@@ -9,4 +9,3 @@ export declare class ArrayUtils implements IArrayUtils {
     chunk<T>(values: T[], chunkSize: number): T[][];
     shuffle<T>(a: T[]): void;
 }
-export declare const arrayUtils: ArrayUtils;

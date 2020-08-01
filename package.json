@@ -1,13 +1,13 @@
 {
   "name": "dd-arrayutils",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Array custom extensions",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
     "test": "TS_NODE_PROJECT='./tsconfig.tests.json' mocha -r ts-node/register tests/**/*.spec.ts",
     "build-tests": "TS_NODE_PROJECT='./tsconfig.tests.json' tsc",
-    "build": "tsc",
+    "build": "tsc --preserveSymlinks true; rollup -c",
     "pretty": "prettier --write '**/*.{ts,js,json}'"
   },
   "dependencies": {
@@ -18,6 +18,10 @@
     "@types/mocha": "^8.0.0",
     "chai": "^4.2.0",
     "mocha": "^8.0.1",
+    "rollup": "^2.23.0",
+    "rollup-plugin-babel-minify": "^10.0.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
     "sa-unique-id": "^0.9.1",
     "ts-node": "^8.10.2",
     "typescript": "^3.9.7"

@@ -1,15 +1,14 @@
 import { expect } from 'chai'
-import { ArrayUtils } from '../../src/arrays/ArrayUtils'
+import ArrayUtils from '../../src'
 import { TestItem, testItemHelper } from '../../tests-helpers/test-item-helper'
 
 describe('ArrayUtils', () => {
-  const arrayUtils = new ArrayUtils()
 
   describe('orderBy', () => {
     it('should sort item array correctly by name when two items have the same name', () => {
       const items: TestItem[] = [
         {
-		  id: '',
+          id: '',
           position: 1,
           selected: false,
           name: 'A Item',
@@ -21,7 +20,7 @@ describe('ArrayUtils', () => {
           name: 'A Item',
         },
       ]
-      arrayUtils.orderBy(items, 'name')
+      ArrayUtils.orderBy(items, 'name')
 
       expect(items[0].position).to.equal(1)
       expect(items[1].position).to.equal(2)
@@ -29,7 +28,7 @@ describe('ArrayUtils', () => {
 
     it('should sort items with different names correctly by name', () => {
       const items: TestItem[] = testItemHelper.createMockedItems(3)
-      arrayUtils.orderBy(items, 'name')
+      ArrayUtils.orderBy(items, 'name')
 
       expect(items[0].position).to.equal(1)
       expect(items[1].position).to.equal(2)
@@ -38,7 +37,7 @@ describe('ArrayUtils', () => {
 
     it('should sort items correctly by position', () => {
       const items: TestItem[] = testItemHelper.createMockedItems(3)
-      arrayUtils.orderBy(items, 'position')
+      ArrayUtils.orderBy(items, 'position')
 
       expect(items[0].position).to.equal(1)
       expect(items[1].position).to.equal(2)
