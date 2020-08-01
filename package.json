@@ -42,5 +42,8 @@
   "bugs": {
     "url": "https://github.com/damianof/dd-arrayutils/issues"
   },
-  "homepage": "https://github.com/damianof/dd-arrayutils#readme"
+  "homepage": "https://github.com/damianof/dd-arrayutils#readme",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  }
 }
