@@ -1,6 +1,6 @@
 import resolve from 'rollup-plugin-node-resolve'
 import commonjs from 'rollup-plugin-commonjs'
-//import minify from 'rollup-plugin-babel-minify'
+import minify from 'rollup-plugin-babel-minify'
 
 export default [
   {
@@ -9,14 +9,14 @@ export default [
       name: 'ArrayUtils',
       file: 'lib/browser.min.js',
       format: 'iife',
-      sourcemap: false,
+      sourcemap: true,
     },
     plugins: [
-      resolve(),
-      commonjs()/*,
+      resolve({ browser: true }),
+      commonjs(),
       minify({
         comments: false,
-      }),*/
+      }),
     ],
   },
 ]
